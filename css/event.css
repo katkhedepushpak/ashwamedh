@@ -1,0 +1,934 @@
+
+/* BUTTON*/
+/* button {color:#454545;background:transparent;border-width:2px;border-style: solid;border-color: #454545;position:relative;
+margin:1em;display:inline-block;padding:0.5em 1em;transition:all 0.3s ease-in-out;text-align:center;font-family:comfortaa;font-weight:bold;cursor: pointer;}
+button:before, button:after {content:'';display:block;position:absolute;border-color:#454545;box-sizing:border-box;border-style:solid;
+width:1em;height:1em;transition:all 0.3s ease-in-out}
+button:before {top:-6px;left:-6px;border-width:2px 0 0 2px;z-index:5;}
+button:after {bottom:-6px;right:-6px;border-width:0 2px 2px 0;}
+button:hover:before, button:hover:after {width:calc(100% + 12px);
+  height:calc(100% + 12px);border-color:#fff}
+button:hover {color:#353535;background-color:#fff;border-color:#fff}
+.panel {max-width:960px;text-align:center;position:relative;margin:auto;}
+ */
+/*some button*/
+a.button {color:#ccc7c7;background:transparent;border-width:2px;border-style: solid;border-color: #ccc7c7;position:relative;
+margin:1em;display:inline-block;padding:0.5em 1em;transition:all 0.3s ease-in-out;text-align:center;font-family:comfortaa;font-weight:bold;cursor: pointer;}
+a.button:before, a.button:after {content:'';display:block;position:absolute;border-color:#454545;box-sizing:border-box;border-style:solid;
+width:1em;height:1em;transition:all 0.3s ease-in-out}
+a.button:before {top:-6px;left:-6px;border-width:2px 0 0 2px;z-index:5;}
+a.button:after {bottom:-6px;right:-6px;border-width:0 2px 2px 0;}
+a.button:hover:before, a.button:hover:after {width:calc(100% + 12px);
+  height:calc(100% + 12px);border-color:#fff}
+a.button:hover {color:#353535;background-color:#fff;border-color:#fff}
+.panel {max-width:960px;text-align:center;position:relative;margin:auto;}
+
+
+
+/* button overlay*/
+#overlay1 {
+  /* we set all of the properties for our overlay */
+  height: auto;min-height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  background: #0b0b19 ;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+  /* CSS 3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  overflow-y: auto;
+  
+}
+
+#mask1 {
+  /* create are mask */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  width: 100%;
+  
+height: 100%;min-height: 100%; 
+  display: none;
+}
+
+/* use :target to look for a link to the overlay then we find our mask */
+#overlay1:target, #overlay1:target + #mask1 {
+  display: block;
+  opacity: 1;
+}
+/* button overlay*/
+#overlay2 {
+  /* we set all of the properties for our overlay */
+  height: auto;min-height: 100%; 
+  width: 80%;
+  margin: 0 auto;
+  background: #0b0b19;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+  /* CSS 3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#mask2 {
+  /* create are mask */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  width: 100%;
+  height: 100%;min-height: 100%; 
+  display: none;
+}
+
+/* use :target to look for a link to the overlay then we find our mask */
+#overlay2:target, #overlay2:target + #mask2{
+  display: block;
+  opacity: 1;
+}
+
+
+
+/* button overlay*/
+#overlay3 {
+  /* we set all of the properties for our overlay */
+  height: auto;min-height: 100%; 
+  width: 80%;
+  margin: 0 auto;
+  background: #0b0b19;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+  /* CSS 3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#mask3 {
+  /* create are mask */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  width: 100%;
+  height: 100%;min-height: 100%; 
+  display: none;
+}
+
+/* use :target to look for a link to the overlay then we find our mask */
+#overlay3:target, #overlay3:target + #mask3 {
+  display: block;
+  opacity: 1;
+}
+
+
+ 
+
+/* button overlay*/
+#overlay2 {
+  /* we set all of the properties for our overlay */
+  height: 100%;min-height: 100%; 
+  width: 80%;
+  margin: 0 auto;
+  background: #0b0b19;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+  /* CSS 3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#mask2 {
+  /* create are mask */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  width: 100%;
+  height: 100%;min-height: 100%; 
+  display: none;
+}
+
+/* use :target to look for a link to the overlay then we find our mask */
+#overlay2:target, #overlay2:target + #mask2 {
+  display: block;
+  opacity: 1;
+}
+
+
+/* button overlay*/
+#overlay4 {
+  /* we set all of the properties for our overlay */
+  height: 100%;min-height: 100%; 
+  width: 80%;
+  margin: 0 auto;
+  background: #0b0b19;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+  /* CSS 3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#mask4 {
+  /* create are mask */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  width: 100%;
+  height: 100%;min-height: 100%; 
+  display: none;
+}
+
+/* use :target to look for a link to the overlay then we find our mask */
+#overlay4:target, #overlay4:target + #mask4 {
+  display: block;
+  opacity: 1;
+}
+
+ 
+
+/* button overlay*/
+#overlay5 {
+  /* we set all of the properties for our overlay */
+  height: auto;min-height: 100%; 
+  width: 80%;
+  margin: 0 auto;
+  background: #0b0b19;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+  /* CSS 3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#mask5 {
+  /* create are mask */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  width: 100%;
+  height: 100%;min-height: 100%; 
+  display: none;
+}
+
+/* use :target to look for a link to the overlay then we find our mask */
+#overlay5:target, #overlay5:target + #mask5 {
+  display: block;
+  opacity: 1;
+}
+
+ 
+
+/* button overlay*/
+#overlay6 {
+  /* we set all of the properties for our overlay */
+  height: auto;min-height: 100%; 
+  width: 80%;
+  margin: 0 auto;
+  background: #0b0b19;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+  /* CSS 3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#mask6 {
+  /* create are mask */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  width: 100%;
+  height: 100%;min-height: 100%; 
+  display: none;
+}
+
+/* use :target to look for a link to the overlay then we find our mask */
+#overlay6:target, #overlay6:target + #mask6 {
+  display: block;
+  opacity: 1;
+}
+
+ 
+
+/* button overlay*/
+#overlay7 {
+  /* we set all of the properties for our overlay */
+  height: auto;min-height: 100%; 
+  width: 80%;
+  margin: 0 auto;
+  background: #0b0b19;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+  /* CSS 3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#mask7 {
+  /* create are mask */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  width: 100%;
+  height: 100%;min-height: 100%; 
+  display: none;
+}
+
+/* use :target to look for a link to the overlay then we find our mask */
+#overlay7:target, #overlay7:target + #mask7 {
+  display: block;
+  opacity: 1;
+}
+
+ 
+
+/* button overlay*/
+#overlay8 {
+  /* we set all of the properties for our overlay */
+  height: auto;min-height: 100%; 
+  width: 80%;
+  margin: 0 auto;
+  background: #0b0b19;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+  /* CSS 3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#mask8 {
+  /* create are mask */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  width: 100%;
+  height: 100%;min-height: 100%; 
+  display: none;
+}
+
+/* use :target to look for a link to the overlay then we find our mask */
+#overlay8:target, #overlay8:target + #mask8 {
+  display: block;
+  opacity: 1;
+}
+
+ 
+
+/* button overlay*/
+#overlay9 {
+  /* we set all of the properties for our overlay */
+  height: auto;min-height: 100%; 
+  width: 80%;
+  margin: 0 auto;
+  background: #0b0b19;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+  /* CSS 3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#mask9 {
+  /* create are mask */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  width: 100%;
+  height: 100%;min-height: 100%; 
+  display: none;
+}
+
+/* use :target to look for a link to the overlay then we find our mask */
+#overlay9:target, #overlay9:target + #mask9 {
+  display: block;
+  opacity: 1;
+}
+
+ 
+
+/* button overlay*/
+#overlay10 {
+  /* we set all of the properties for our overlay */
+  height: auto;min-height: 100%; 
+  width: 80%;
+  margin: 0 auto;
+  background: #0b0b19;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+  /* CSS 3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#mask10 {
+  /* create are mask */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  width: 100%;
+  height: 100%;min-height: 100%; 
+  display: none;
+}
+
+/* use :target to look for a link to the overlay then we find our mask */
+#overlay10:target, #overlay10:target + #mask10 {
+  display: block;
+  opacity: 1;
+}
+
+ 
+
+/* button overlay*/
+#overlay10 {
+  /* we set all of the properties for our overlay */
+  height: auto;min-height: 100%; 
+  width: 80%;
+  margin: 0 auto;
+  background: #0b0b19;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+  /* CSS 3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#mask10 {
+  /* create are mask */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  width: 100%;
+  height: 100%;min-height: 100%; 
+  display: none;
+}
+
+/* use :target to look for a link to the overlay then we find our mask */
+#overlay10:target, #overlay10:target + #mask10 {
+  display: block;
+  opacity: 1;
+}
+
+ 
+/* button overlay*/
+#overlay11 {
+  /* we set all of the properties for our overlay */
+  height: auto;min-height: 100%; 
+  width: 80%;
+  margin: 0 auto;
+  background: #0b0b19;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+  /* CSS 3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#mask11 {
+  /* create are mask */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  width: 100%;
+  height: 100%;min-height: 100%; 
+  display: none;
+}
+
+/* use :target to look for a link to the overlay then we find our mask */
+#overlay11:target, #overlay11:target + #mask11 {
+  display: block;
+  opacity: 1;
+}
+
+ 
+
+/* button overlay*/
+#overlay12 {
+  /* we set all of the properties for our overlay */
+  height: auto;min-height: 100%; 
+  width: 80%;
+  margin: 0 auto;
+  background: #0b0b19;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+  /* CSS 3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#mask12 {
+  /* create are mask */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  width: 100%;
+  height: 100%;min-height: 100%; 
+  display: none;
+}
+
+/* use :target to look for a link to the overlay then we find our mask */
+#overlay12:target, #overlay12:target + #mask12 {
+  display: block;
+  opacity: 1;
+}
+
+ 
+/* button overlay*/
+#overlay13 {
+  /* we set all of the properties for our overlay */
+  height: auto;min-height: 100%; 
+  width: 80%;
+  margin: 0 auto;
+  background: #0b0b19;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+  /* CSS 3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#mask13 {
+  /* create are mask */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  width: 100%;
+  height: 100%;min-height: 100%; 
+  display: none;
+}
+
+/* use :target to look for a link to the overlay then we find our mask */
+#overlay13:target, #overlay13:target + #mask13 {
+  display: block;
+  opacity: 1;
+}
+
+ 
+
+/* button overlay*/
+#overlay14 {
+  /* we set all of the properties for our overlay */
+  height: auto;min-height: 100%; 
+  width: 80%;
+  margin: 0 auto;
+  background: #0b0b19;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+  /* CSS 3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#mask14 {
+  /* create are mask */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  width: 100%;
+  height: 100%;min-height: 100%; 
+  display: none;
+}
+
+/* use :target to look for a link to the overlay then we find our mask */
+#overlay14:target, #overlay14:target + #mask14 {
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+
+
+/************Register Button**********/
+.overlaybut {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlaybut:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 50px;
+  background: #0b0b19 ;
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: white;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 400px;
+  overflow: auto;
+  color: white;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 100%;
+  }
+}
+
+
+
+.popup .content::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.popup .content::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.popup .content::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+
+/*****************Register Button***************/
+.button_base {
+    margin: 0;
+    border: 0;
+    font-size: 18px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -100px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+.button_base:hover {
+    cursor: pointer;
+}
+
+.b07_3d_double_roll {
+    perspective: 500px;
+    -webkit-perspective: 500px;
+    -moz-perspective: 500px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+.b07_3d_double_roll div {
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    border: #000000 solid 1px;
+    pointer-events: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.b07_3d_double_roll div:nth-child(1) {
+    color: #101023;
+    background-color: #ffffff;
+    z-index: 0;
+    width: 100%;
+    height: 50px;
+    clip: rect(0px, 100px, 50px, 0px);
+    position: absolute;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform-origin: 50% 50% -25px;
+    -webkit-transform-origin: 50% 50% -25px;
+    -moz-transform-origin: 50% 50% -25px;
+}
+
+.b07_3d_double_roll div:nth-child(2) {
+    color: #000000;
+    background-color: #000000;
+    z-index: -1;
+    width: 100%;
+    height: 50px;
+    clip: rect(0px, 100px, 50px, 0px);
+    position: absolute;
+    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform-origin: 50% 50% -25px;
+    -webkit-transform-origin: 50% 50% -25px;
+    -moz-transform-origin: 50% 50% -25px;
+}
+
+.b07_3d_double_roll div:nth-child(3) {
+    color: #101023;
+    background-color: #ffffff;
+    z-index: 0;
+    width: 100%;
+    height: 50px;
+    clip: rect(0px, 200px, 50px, 100px);
+    position: absolute;
+    transition: all 0.2s ease 0.1s;
+    -webkit-transition: all 0.2s ease 0.1s;
+    -moz-transition: all 0.2s ease 0.1s;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform-origin: 50% 50% -25px;
+    -webkit-transform-origin: 50% 50% -25px;
+    -moz-transform-origin: 50% 50% -25px;
+}
+
+.b07_3d_double_roll div:nth-child(4) {
+    color: #000000;
+    background-color: #000000;
+    z-index: -1;
+    width: 100%;
+    height: 50px;
+    clip: rect(0px, 200px, 50px, 100px);
+    position: absolute;
+    transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transition: all 0.2s ease 0.1s;
+    -webkit-transition: all 0.2s ease 0.1s;
+    -moz-transition: all 0.2s ease 0.1s;
+    transform-origin: 50% 50% -25px;
+    -webkit-transform-origin: 50% 50% -25px;
+    -moz-transform-origin: 50% 50% -25px;
+}
+
+.b07_3d_double_roll:hover div:nth-child(1) {
+    background-color: #000000;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+}
+
+.b07_3d_double_roll:hover div:nth-child(2) {
+    color: #ffffff;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+}
+
+.b07_3d_double_roll:hover div:nth-child(3) {
+    background-color: #000000;
+    transition: all 0.2s ease 0.1s;
+    -webkit-transition: all 0.2s ease 0.1s;
+    -moz-transition: all 0.2s ease 0.1s;
+    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+}
+
+.b07_3d_double_roll:hover div:nth-child(4) {
+    color: #ffffff;
+    transition: all 0.2s ease 0.1s;
+    -webkit-transition: all 0.2s ease 0.1s;
+    -moz-transition: all 0.2s ease 0.1s;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+}
+
+
+
+
+
+
+
+
+
+
